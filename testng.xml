@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ParallelTestSuite">
+  
+  <test name="ChromeTest">
+  
+    <parameter name="browser1" value="chrome" />
+    <parameter name="passwordFb" value="Imran@10" />
+    <parameter name="hubUrl" value="http://192.168.2.52:4444/wd/hub" />
+  
+    <classes>
+  
+      <class name="com.example.socialmedia.Parallel" />
+  
+    </classes>
+  
+  </test>
+  
+  <test name="FirefoxTest">
+  
+    <parameter name="browser2" value="firefox" />
+    <parameter name="passwordInsta" value="Steve@123" />
+  
+    <classes>
+  
+      <class name="com.example.socialmedia.Parallel" />
+  
+    </classes>
+  
+  </test>
+  <!-- Add more test elements if needed -->
+</suite>
